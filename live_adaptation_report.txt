@@ -1,0 +1,18 @@
+LIVE-ADAPTED RANDOM FOREST REPORT
+==================================================
+Live provisional Normal rows: 191
+Live sample weight: 1000
+Original held-out test accuracy: 0.998777
+Live Anomaly predictions: 0
+Live Normal predictions: 191
+Live mean P(Anomaly): 0.000066
+
+Held-out test classification report:
+              precision    recall  f1-score   support
+
+      Normal     0.9990    0.9864    0.9926      7718
+     Anomaly     0.9988    0.9999    0.9993     84659
+
+    accuracy                         0.9988     92377
+   macro avg     0.9989    0.9932    0.9960     92377
+weighted avg     0.9988    0.9988    0.9988     92377

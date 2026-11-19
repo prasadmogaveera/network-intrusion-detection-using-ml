@@ -1,0 +1,47 @@
+IOT INTRUSION DATASET CLEANING REPORT
+==================================================
+Input file: IoT Network Intrusion Dataset.csv
+Original rows: 625,783
+Original columns: 86
+Exact duplicate rows removed: 163,840
+Rows after exact deduplication: 461,943
+Rows with missing/non-finite candidate features removed: 0
+Rows with invalid binary labels: 0
+Rows with invalid multiclass labels: 0
+
+Label DATASET
+----------------------------------------
+Rows before conflict filtering: 461,943
+Ambiguous feature-vector rows removed: 58
+Final rows: 461,885
+Output file: IoT_Network_Intrusion_Clean_Binary.csv
+Class distribution:
+Label
+Anomaly    423294
+Normal      38591
+
+Cat DATASET
+----------------------------------------
+Rows before conflict filtering: 461,943
+Ambiguous feature-vector rows removed: 1,868
+Final rows: 460,075
+Output file: IoT_Network_Intrusion_Clean_Multiclass.csv
+Class distribution:
+Cat
+Mirai                281178
+DoS                   59387
+Scan                  56605
+Normal                38591
+MITM ARP Spoofing     24314
+
+IMPORTANT NOTES
+----------------------------------------
+The original CSV was not modified.
+Only exact duplicate full records were removed initially.
+Rows with non-finite selected model features were removed.
+Ambiguous feature vectors were excluded separately per target.
+Zero-duration flows were retained when their selected features were valid.
+Unselected infinite rate columns were not used as model features.
+IP addresses, timestamps, flow IDs and Sub_Cat were excluded.
+No scaling, balancing, imputation or model training was performed.
+Cleaning does not guarantee that the data is error-free.
